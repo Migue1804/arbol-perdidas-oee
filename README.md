@@ -1,10 +1,46 @@
-# Yamazumi Chart
+# Arbol de pérdidas de OEE
 
-Un Yamazumi Chart es una herramienta utilizada en la fabricación y gestión de procesos para visualizar y analizar la distribución del trabajo en un proceso de producción. Este gráfico lleva el nombre de su creador, Taiichi Yamazumi, un ingeniero japonés conocido por sus contribuciones al desarrollo del Sistema de Producción Toyota y a la metodología Lean Manufacturing.
+el Árbol de Pérdidas del OEE (Overall Equipment Effectiveness), también conocido como el Árbol de Pérdidas de TPM (Total Productive Maintenance). El OEE es una métrica utilizada en la gestión de la producción para medir la eficiencia general de un equipo o proceso de fabricación. El Árbol de Pérdidas del OEE desglosa las fuentes de pérdida de eficiencia en tres categorías principales:
 
-El Yamazumi Chart ayuda a identificar desequilibrios en la carga de trabajo entre diferentes estaciones de trabajo dentro de un proceso de fabricación. Para ello, muestra gráficamente la cantidad de tiempo requerido para completar una tarea específica en cada estación o actividad del proceso. Esto permite a los gerentes y equipos de producción optimizar la distribución del trabajo para minimizar el despilfarro y mejorar la eficiencia.
+Pérdidas de Disponibilidad: Estas pérdidas se refieren al tiempo en que el equipo no está produciendo debido a paradas planificadas o no planificadas, como tiempo de inactividad por mantenimiento, ajustes de la máquina, tiempos de cambio de producción, averías no planificadas, etc.
 
-En un Yamazumi Chart, el eje horizontal representa las diferentes estaciones de trabajo o actividades en el proceso, mientras que el eje vertical muestra el tiempo requerido para completar cada tarea. Cada barra en el gráfico representa el tiempo necesario para completar la tarea en una estación particular. Al visualizar esta información de manera clara, los equipos pueden identificar fácilmente cuellos de botella, sobreutilización o subutilización de recursos, y tomar medidas para mejorar el flujo de trabajo y la productividad global del proceso.
+Pérdidas de Rendimiento: Estas pérdidas se refieren a la diferencia entre la velocidad de producción ideal y la velocidad real de producción. Pueden deberse a factores como la velocidad reducida de la máquina, tasas de rechazo o reproceso, y otros factores que afectan la velocidad de producción.
+
+Pérdidas de Calidad: Estas pérdidas se refieren a la producción de unidades defectuosas o que no cumplen con los estándares de calidad. Esto puede incluir productos defectuosos, retrabajos necesarios, desperdicio de material, etc.
+
+El Árbol de Pérdidas del OEE se utiliza para identificar y cuantificar estas pérdidas específicas con el fin de implementar acciones correctivas y mejorar la eficiencia global del equipo o proceso de fabricación.
+
+## Subcategorías comunes para cada una de las tres pérdidas principales en el Árbol de Pérdidas del OEE:
+
+Pérdidas de Disponibilidad:
+
+Tiempo de inactividad por mantenimiento preventivo planificado.
+Tiempo de inactividad por mantenimiento correctivo no planificado.
+Tiempo de inactividad debido a ajustes de la máquina.
+Tiempo de inactividad por cambio de producción (tiempo de preparación).
+Tiempo de inactividad debido a falta de materiales o piezas.
+Tiempo de inactividad por falta de personal.
+Tiempo de inactividad debido a fallos en la alimentación de energía.
+
+Pérdidas de Rendimiento:
+
+Tiempo de ralentización de la máquina.
+Tiempo de inactividad de velocidad de producción reducida.
+Tiempo de inactividad por paradas y atascos de la máquina.
+Tiempo de inactividad debido a tiempos muertos operativos (como la espera de operadores).
+Tiempo de inactividad debido a ajustes de proceso no óptimos.
+Pérdidas de producción debido a tasas de rechazo o reproceso.
+Pérdidas de producción debido a pérdidas de ciclo.
+
+Pérdidas de Calidad:
+
+Productos defectuosos que requieren retrabajo.
+Productos defectuosos que necesitan ser desechados.
+Tiempo de inactividad debido a inspecciones de calidad.
+Retrasos en la producción debido a problemas de calidad.
+Pérdidas de material debido a defectos de calidad.
+Pérdidas de producción debido a tiempos de espera para piezas de calidad adecuada.
+Estas subcategorías pueden variar según la naturaleza específica del proceso de fabricación o la operación del equipo, pero proporcionan una estructura útil para identificar y abordar las fuentes específicas de pérdida de eficiencia en un entorno de producción.
 
 ### Pre-Requsities
 - Python 3.9 (Python 3.7/3.8 can work in some cases)
