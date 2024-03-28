@@ -24,7 +24,7 @@ def main():
         example_df = pd.DataFrame(example_data)
         st.sidebar.write(example_df)
 
-        st.markdown("- **Paso 3:** Observa el gráfico de Árbol de Pérdidas que muestra la distribución de pérdidas por categorías.")
+        st.markdown("- **Paso 3:** Observa el gráfico de Árbol de Pérdidas en el Sankey Chart que muestra la distribución de pérdidas por categorías.")
         st.markdown("- **Paso 4:** ¡Listo! Puedes ver los datos ingresados en la tabla debajo del gráfico.")      
         
         # Información adicional
