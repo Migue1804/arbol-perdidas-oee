@@ -3,6 +3,34 @@ import plotly.graph_objects as go
 import pandas as pd
 
 def main():
+    with st.sidebar: 
+        st.title("Instrucciones")
+        st.write("¡Bienvenido a la aplicación de análisis de pérdidas!")
+        st.markdown("Por favor sigue las instrucciones paso a paso para utilizar la herramienta correctamente.")
+        
+        # Pasos para el registro de pérdidas
+        st.markdown("### Pasos:")
+        st.markdown("- **Paso 1:** Ingresa el número de líneas de producción.")
+        st.markdown("- **Paso 2:** Para cada línea de producción, ingresa el nombre y las entradas de pérdida asociadas.")
+        # Ejemplo de Datos
+        st.sidebar.subheader("Ejemplo de Datos:")
+        example_data = {
+            "Línea de Producción": ["Línea 1", "Línea 1", "Línea 2", "Línea 2", "Línea 2"],
+            "Descripción del Tiempo Muerto": ["Falla de equipo", "Cambio de producto", "Espera de material", "Falla de equipo", "Defectos de calidad"],
+            "Sub Categoría": ["Paro de equipo", "Preparaciones previas", "Paro de equipo", "Paro de equipo", "Inspecciones"],
+            "Tipo de Pérdida": ["Disponibilidad", "Disponibilidad", "Disponibilidad", "Disponibilidad", "Calidad"],
+            "Tiempo Perdido (minutos)": [30, 20, 15, 25, 10]
+        }
+        example_df = pd.DataFrame(example_data)
+        st.sidebar.write(example_df)
+
+        st.markdown("- **Paso 3:** Observa el gráfico de Árbol de Pérdidas que muestra la distribución de pérdidas por categorías.")
+        st.markdown("- **Paso 4:** ¡Listo! Puedes ver los datos ingresados en la tabla debajo del gráfico.")      
+        
+        # Información adicional
+        st.markdown("### Información Adicional:")
+        st.markdown("👉 **Para más información: [LinkedIn](https://www.linkedin.com/in/josemaguilar/)**")
+
     st.image("arbol.jpg", width=720) 
     st.sidebar.header("Registro de Pérdidas")
 
